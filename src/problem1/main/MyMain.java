@@ -11,8 +11,16 @@ import java.util.Scanner;
 
 public class MyMain {
     public static void main(String[] args){
-        MyBinarySearchTree tree = new MyBinarySearchTree();
-        Scanner scanner = new Scanner(System.in);
+        MyBinarySearchTree obj = new MyBinarySearchTree();
+        //Scanner scanner = new Scanner(System.in);
+        obj.insert(5);
+        obj.insert(1);
+        obj.insert(10);
+        obj.insert(6);
+        System.out.println("All Left Nodes");
+        obj.printLeftNode();
+        System.out.println(" count of nodes not  having left node ");
+        obj.countNodeLeft();
 
     }
 }
